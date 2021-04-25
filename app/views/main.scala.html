@@ -8,30 +8,31 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-    </head>
-    <body>
-        <header>
-            <a href="/">Main</a>
-            <a href="/stream">Stream</a>
-            <a href="/community">Community</a>
-            <a href="/art">Art</a>
-            <a href="/merch">Merch</a>
-            <a href="/theory">Theory</a>
-            <a href="/login">Login</a>
-        </header>
-        @content
+	<head>
+		<title>@title</title>
+		<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+		<link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+	</head>
+	<body>
+    <div class="body-wrapper">
+    <header>
+      <a href="/">Main</a>
+      <a href="/stream">Stream</a>
+      <a href="/community">Community</a>
+      <a href="/art">Art</a>
+      <a href="/merch">Merch</a>
+      <a href="/theory">Theory</a>
+      <a href="/login">Login</a>
+    </header>
+    @content
+    </div>
+    <footer>
+      This website is created and maintained by the proletariat. Hasan Piker or
+      other capital owners of the hasanabi brand may or maynote endorse this website.
+    </footer>
 
-        <footer>
-            This website is created and maintained by the proletariat. Hasan Piker or
-            other capital owners of the hasanabi brand may or maynote endorse this website.
-        </footer>
+    <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript">
 
-        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript">
-
-        </script>
-    </body>
+    </script>
+	</body>
 </html>

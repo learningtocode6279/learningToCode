@@ -1,18 +1,39 @@
+html, body {
+	background-color: #333;
+	color: white;
+	height 100%;
+}
+
 body {
-    background-color: #333333;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.body-wrapper {
+  flex: 1 0 auto;
+  margin: 8px;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #444
 }
 
 header {
-    font-size: 30px;
-
+	font-size: 30px;
 }
 
 a:link, a:visited {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 a:hover, a.active{
-    border-bottom: 3px solid red;
+	border-bottom: 3px solid red;
+}
+
+.twitter-timeline {
+	float: right;
+	max-height: 600px;
 }
