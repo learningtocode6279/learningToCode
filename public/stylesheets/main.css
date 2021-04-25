@@ -1,0 +1,18 @@
+body {
+    background-color: #333333;
+    color: white;
+}
+
+header {
+    font-size: 30px;
+
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a.active{
+    border-bottom: 3px solid red;
+}
