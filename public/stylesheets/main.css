@@ -1,27 +1,33 @@
-html, body {
+html {
 	background-color: #333;
 	color: white;
 	height 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
+  padding: 0px;
+  margin: 0px
 }
 
 .body-wrapper {
-  flex: 1 0 auto;
-  margin: 8px;
+  min-height: 100vh;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 0px;
 }
 
 footer {
-  flex-shrink: 0;
+	min-height: 100px;
   background-color: #444
+}
+
+#footer-content {
+	padding: 16px;
 }
 
 header {
 	font-size: 30px;
+	padding 8px;
 }
 
 a:link, a:visited {
