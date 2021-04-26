@@ -4,6 +4,7 @@
 
 # An example controller showing a sample home page
 GET	 /						   controllers.HomeController.index()
+GET	 /media					 controllers.HomeController.index()
 GET	 /theory				 controllers.TheoryController.theoryPage()
 GET	 /community 		 controllers.CommunityController.communityPage()
 GET	 /art        		 controllers.ArtController.artPage()
