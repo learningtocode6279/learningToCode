@@ -1,19 +1,25 @@
 html {
-	background-color: #333;
 	color: white;
 	height 100%;
 }
 
 body {
   padding: 0px;
-  margin: 0px
+  margin: 0px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 .body-wrapper {
   min-height: 100vh;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
+}
+
+#main-content-wrapper * {
+	background-color: rgba(0,0,0,0.75);
 }
 
 footer {
@@ -27,7 +33,15 @@ footer {
 
 header {
 	font-size: 30px;
-	padding 8px;
+	background-color: #333;
+	font-size: 0px
+}
+
+header a {
+	padding: 20px;
+  display: inline-block;
+	border-bottom: 3px solid black;
+	font-size: 30px;
 }
 
 a:link, a:visited {
@@ -42,4 +56,16 @@ a:hover, a.active{
 .twitter-timeline {
 	float: right;
 	max-height: 600px;
+}
+
+h1 {
+	text-shadow: black 0px 0px 2px, black 0px 0px 4px, red 0px 0px 6px, red 0px 0px 8px;
+	font-size: 40px;
+}
+
+.main-header-container {
+  display: table;
+  border-radius: 30px;
+  padding: 5px 50px 5px 50px;
+  margin: auto;
 }
