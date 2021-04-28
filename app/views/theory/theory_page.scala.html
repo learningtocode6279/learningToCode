@@ -1,13 +1,12 @@
 
 
-@main("Theory") {
-<p>
-	<i>
-		Education is free.
-		Freedoom of education shall be enjoyed under the condition fixed by law
-		and under the supreme control of the state
-	</i>
-</p>
+@main("Theory",
+"Education is free. " +
+"Freedoom of education shall be enjoyed under the condition fixed by law " +
+"and under the supreme control of the state. "
+){
+<div class="row justify-content-md-start g-2 mt-2" data-masonry='{"percentPosition": true }'>
+@theory_item_container(){
 <h2>Basics</h2>
 <p>
 	A simple guide on where to begin on understanding left values. It is recommended to
@@ -24,6 +23,8 @@
 		Manifesto of the Communist Party
 	</a></li>
 </ul>
+}
+@theory_item_container(){
 <h2>The most holy work</h2>
 <ul>
 	<li>
@@ -38,6 +39,8 @@
 		</a>
 	</li>
 </ul>
+}
+@theory_item_container(){
 <h2>Further reading</h2>
 <ul>
 	<li><a href="https://www.marxists.org/archive/lenin/works/1916/imp-hsc/imperialism.pdf">
@@ -50,6 +53,8 @@
 		Dialectical and Historical Materialism
 	</a></li>
 </ul>
+}
+@theory_item_container(){
 <h2>Modern works</h2>
 <ul>
 	<li><a href="https://libcom.org/files/Capitalist%20Realism_%20Is%20There%20No%20Alternat%20-%20Mark%20Fisher.pdf">
@@ -62,7 +67,9 @@
 		The Informatisation of Production
 	</a></li>
 </ul>
-<p>
+}
+<div class="col-xs-12" style="max-width: 700px">
+	<div class="dark-bg p-3">
 	It's worth reminding that this is in no way an exhaustive list of works on
 	leftist theory. The world has seen countless great minds, writing books about
 	the subject, both before and after Karl Marx himself.
@@ -70,5 +77,8 @@
 	don't hesitate to
 	ask for help from the community! <a href="/community">Hascord</a> is home to many of the most trained
 	marxists of our time, who will be glad to give you further guidence.
+	</div>
 </p>
+</div>
+</div>
 }

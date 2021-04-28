@@ -22,11 +22,14 @@ body {
 }
 
 #main-content-wrapper {
-	margin: 8px;
+	max-width: 1500px;
+  margin: auto;
+  padding: 8px;
 }
 
-#main-content-wrapper > * {
-	background-color: rgba(0,0,0,0.80);
+.dark-bg {
+	background-color: rgba(30,30,30,0.98);
+	border: solid #a22 2px;
 }
 
 footer {
@@ -73,8 +76,6 @@ h1 {
 }
 
 .main-header-container {
-  display: table;
   border-radius: 30px;
   padding: 5px 50px 5px 50px;
-  margin: auto;
 }
