@@ -60,7 +60,7 @@ a:link, a:visited {
 }
 
 a:hover, a.active{
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #a22;
   color: inherit !important;
   text-decoration: inherit !important;
 }
