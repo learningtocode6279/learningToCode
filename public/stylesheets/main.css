@@ -12,6 +12,12 @@ body {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
   background-attachment: fixed !important;
+  background-color: #B22222 !important;
+  -webkit-transition: background-image 1.5s linear;
+  -moz-transition: background-image 1.5s linear;
+  -o-transition: background-image 1.5s linear;
+  -ms-transition: background-image 1.5s linear;
+  transition: background-image 1.5s linear;
 }
 
 .body-wrapper {

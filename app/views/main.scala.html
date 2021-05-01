@@ -1,3 +1,5 @@
+@import _root_.art.ArtManager
+
 @(title: String, quote : String = null)(content: Html)
 
 <!DOCTYPE html>
@@ -18,7 +20,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body style="background: url(@routes.Assets.versioned("background-images/bg-image-1.jpg")">
+	<body style="background: url(@routes.Assets.versioned("background-images/redpixel.png")">
     <div class="body-wrapper">
     <header>
       <a href="/media">Media</a>
@@ -46,7 +48,7 @@
     <footer>
 	    <div id="footer-content">
 		    This website is created and maintained by the proletariat. Hasan Piker or
-		    other capital owners of the hasanabi brand may or maynote endorse this website.
+		    other capital owners of the hasanabi brand may or may not endorse this website.
 	    </div>
     </footer>
 
@@ -55,3 +57,12 @@
     </script>
 	</body>
 </html>
+
+<script>
+//Load bg like this, so it appears smoothly
+$(document).ready(function() {
+	$('body').css(
+		"background-image", "url(@ArtManager.randomBgUrl())"
+	);
+});
+</script>
