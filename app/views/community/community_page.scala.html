@@ -1,22 +1,30 @@
-@main("Community") {
+@import theory.theory_item_container
 
-<p>
-  <i>The economic anarchy of capitalist society as it exists today is, in my opinion, the real source of the evil.
-    We see before us a huge community of producers the members of which are unceasingly striving to deprive each other of the fruits of their collective labor...
-    I am convinced there is only one way to eliminate these grave evils, namely through the establishment of a socialist economy, accompanied by an educational system which would be oriented toward social goals.
-  </i>
-</p>
+@main("Community",
+"The economic anarchy of capitalist society as it exists today is, in my opinion, the real source of the evil." +
+"We see before us a huge community of producers the members of which are unceasingly striving to deprive each other of the fruits of their collective labor..." +
+"I am convinced there is only one way to eliminate these grave evils, namely through the establishment of a socialist economy, accompanied by an educational system which would be oriented toward social goals."
+) {
 
-<a href="https://www.discord.gg/hasan">
-  <h2>Hascord - everything and everyone important</h2>
-  <img alt="Hascord" src="@routes.Assets.versioned("images/hascordImage.jpg")">
-</a>
-<a href="https://www.reddit.com/r/Hasan_Piker/">
-  <h2>Hasanabi Reddit - Seize the memes of production!</h2>
-  <img alt="Reddit" src="@routes.Assets.versioned("images/hasanabiReddit.png")">
-</a>
-<a href="https://www.reddit.com/r/okbuddyhasan//">
-  <h2>Forbidden - Do not click</h2>
-  <img alt="Reddit" src="@routes.Assets.versioned("images/basketball.png")">
-</a>
+
+<div class="row justify-content-md-start g-2 mt-2" data-masonry='{"percentPosition": true }'>
+@theory_item_container(){
+  <a href="https://www.discord.gg/hasan">
+    <h2>Hascord - everything and everyone important</h2>
+    <img class="community-image" alt="Hascord" src="@routes.Assets.versioned("images/hascordImage.jpg")">
+  </a>
+}
+@theory_item_container(){
+  <a href="https://www.reddit.com/r/Hasan_Piker/">
+    <h2>Hasanabi Reddit - Seize the memes of production!</h2>
+    <img class="community-image" alt="Reddit" src="@routes.Assets.versioned("images/hasanabiReddit.png")">
+  </a>
+}
+@theory_item_container(){
+  <a href="https://www.reddit.com/r/okbuddyhasan//">
+    <h2>Forbidden - Do not click</h2>
+    <img class="community-image" alt="Reddit" src="@routes.Assets.versioned("images/basketball.png")">
+  </a>
+</div>
+}
 }
