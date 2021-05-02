@@ -1,6 +1,12 @@
 @()
 
 @main("Media") {
-  @twitter()
+<div class="row justify-content-md-start g-2 mt-2">
+<div class="col-xs-12 col-lg-8">
   @youtube()
+</div>
+  <div class="col-xs-12 col-lg-4" style="min-height: 500px">
+    @twitter()
+  </div>
+</div>
 }
