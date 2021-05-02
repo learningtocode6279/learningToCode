@@ -2,6 +2,7 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
+import views.html.info.contact_page;
 import views.html.info.index;
 
 /**
@@ -20,4 +21,7 @@ public class HomeController extends Controller {
 		return ok(index.render());
 	}
 
+	public Result contactPage(){
+		return ok(contact_page.render());
+	}
 }
