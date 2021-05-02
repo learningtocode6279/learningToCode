@@ -18,7 +18,24 @@ public class ArtManager {
 	private static final List<String> BACKGROUND_IMAGES =
 			List.of(
 				"https://imgur.com/7xb887l.png",
-				"https://imgur.com/5aqk4JN.png"
+				"https://imgur.com/5aqk4JN.png",
+				"https://imgur.com/nkArxKI.png",
+				"https://imgur.com/EV7wUqT.png",
+				"https://imgur.com/c3AIbKB.png",
+				"https://imgur.com/x6Ya5KE.png",
+				"https://imgur.com/Ixgq4pW.png",
+				"https://imgur.com/g42K8o4.png",
+				"https://imgur.com/ls4dYGl.png",
+				"https://imgur.com/kGv41tN.png",
+				"https://imgur.com/lxfWTJz.png",
+				"https://imgur.com/Sat6t5G.png",
+				"https://imgur.com/S9zEckA.png",
+				"https://imgur.com/kIqqh3c.png",
+				"https://imgur.com/1JOnlzv.png",
+				"https://imgur.com/eKWVICo.png",
+				"https://imgur.com/0KQpMcE.png",
+				"https://imgur.com/OiVJOBZ.png",
+				"https://imgur.com/l0floke.png"
 			);
 
 	public static String randomBgUrl()
