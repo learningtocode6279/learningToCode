@@ -8,11 +8,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+import static java.time.LocalDate.of;
+
 public class ArtManager {
 
 	private static final List<ArtItem> ART_ITEMS =
 			List.of(
-					new ArtItem("LITERALLY NOTHING", null, LocalDate.of(2021, Month.MAY, 1))
+					new ArtItem("LITERALLY NOTHING", null, null, of(2021, Month.MAY, 1))
 			);
 
 	private static final List<String> BACKGROUND_IMAGES =
