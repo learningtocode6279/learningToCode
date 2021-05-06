@@ -1,6 +1,6 @@
 @import _root_.art.ArtManager
 
-@(title: String, quote : String = null)(content: Html)
+@(title: String, quote : String = null, wide : Boolean = false)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
       <a href="/merch">Merch</a>
       <a href="/login">Login</a>
     </header>
-    <div id="main-content-wrapper">
+    <div id="main-content-wrapper" @if(wide){style="max-width: 97%;"}>
 	    <div class="row justify-content-start gx-5 m-2" data-masonry='{"percentPosition": true }'>
 		    <div class="main-header-container col-auto col-md-auto dark-bg">
 			    <h1>@title</h1>

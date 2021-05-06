@@ -1,11 +1,21 @@
 @main("Media",
 "The proletarians have nothing to lose but their chains."
-+ " They have a world to win. Working men of all countries, unite!"){
++ " They have a world to win. Working men of all countries, unite!",
+true){
 <div class="row justify-content-md-start g-2 mt-2">
-<div class="col-xs-12 col-lg-8">
-  @youtube()
-</div>
-  <div class="col-xs-12 col-lg-4" style="min-height: 500px">
+  <div class="col-xs-12 col-lg-8 g-2 mt-2">
+    <div class="row me-2">
+      <div class="col-xs-12 dark-bg p-2 me-2 mb-2">
+        <h2>Youtube feed</h2>
+        @youtube("UUtoaZpBnrd0lhycxYJ4MNOQ")
+      </div>
+      <div class="col-xs-12 dark-bg p-2 me-2">
+        <h2>Fear & Malding</h2>
+        @youtube("UUnI_h3e6b5jGLfly2SY57SA")
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-4" style="min-height: 700px">
     @twitter()
   </div>
 </div>

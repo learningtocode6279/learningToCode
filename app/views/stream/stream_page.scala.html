@@ -1,5 +1,6 @@
 @main("Stream",
-"The absence of freedom of the press makes all other freedoms illusory.") {
+"The absence of freedom of the press makes all other freedoms illusory.",
+true) {
 <div class="row">
 <div class="col-xs-12 col-xl-9">
 		<div id="live-stream-box"></div>
@@ -35,7 +36,6 @@ function makeChatBox(){
 }
 
 $(document).ready(function() {
-	$("#main-content-wrapper").css("max-width", "99%")
 	setHeight();
 	makeChatBox()
 });
