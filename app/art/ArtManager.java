@@ -14,7 +14,8 @@ public class ArtManager {
 
 	private static final List<ArtItem> ART_ITEMS =
 			List.of(
-					new ArtItem("LITERALLY NOTHING", null, null, of(2021, Month.MAY, 1))
+					new ArtItem("Weird pfp thing", "https://imgur.com/cTkG25G.png",
+							"hasanabi.org", of(2021, Month.MAY, 6))
 			);
 
 	private static final List<String> BACKGROUND_IMAGES =

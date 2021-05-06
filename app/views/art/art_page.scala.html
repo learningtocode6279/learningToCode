@@ -12,6 +12,7 @@
 	<div class="dark-bg p-3">
 		<p>
 			Here you can find art that has been socialized by the party.
+			<a href="/contact">Contact</a> us if you want to submit art here.
 			Use the dates below to navigate.
 		</p>
 		@for((date, items) <- ArtManager.getArtItems()){
@@ -21,7 +22,7 @@
 </div>
 
 @for((date, items) <- ArtManager.getArtItems()){
-<div id="@date.toString()-item-container" class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+<div id="@date.toString()-item-container" class="col-xs-12 col-md-6 col-xl-4">
 	<div class="dark-bg p-3">
 		<h3>
 			@date.toString
