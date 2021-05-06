@@ -3,16 +3,16 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET	 /						   controllers.HomeController.index()
-GET	 /media					 controllers.HomeController.index()
-GET	 /theory				 controllers.TheoryController.theoryPage()
-GET	 /community 		 controllers.CommunityController.communityPage()
-GET	 /art        		 controllers.ArtController.artPage()
-GET	 /merch      		 controllers.MerchController.merchPage()
-GET	 /login      		 controllers.LoginController.loginPage()
-GET	 /stream     		 controllers.StreamController.streamPage()
+GET	 /						   controllers.HomeController.index(request : Request)
+GET	 /media					 controllers.HomeController.index(request : Request)
+GET	 /theory				 controllers.TheoryController.theoryPage(request : Request)
+GET	 /community 		 controllers.CommunityController.communityPage(request : Request)
+GET	 /art        		 controllers.ArtController.artPage(request : Request)
+GET	 /merch      		 controllers.MerchController.merchPage(request : Request)
+GET	 /login      		 controllers.LoginController.loginPage(request : Request)
+GET	 /stream     		 controllers.StreamController.streamPage(request : Request)
 
-GET   /contact        controllers.HomeController.contactPage()
+GET   /contact        controllers.HomeController.contactPage(request : Request)
 
 # Map static resources from the /public folder to the /assets URL path
 GET	 /assets/*file		    controllers.Assets.versioned(path="/public", file: Asset)
