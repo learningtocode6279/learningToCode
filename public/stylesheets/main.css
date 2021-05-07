@@ -86,6 +86,10 @@ h1 {
   padding: 5px 50px 5px 50px;
 }
 
+.hover-image-wrapper:hover{
+	z-index: 1500;
+}
+
 .community-image{
 	width: 100%;
 	display: block;
