@@ -9,7 +9,7 @@ public class CommunityController extends Controller
 {
 	public Result communityPage(Request request)
 	{
-		HomeController.writeLog(request, "community");
+		HomeController.writeLog(request);
 		return ok(community_page.render());
 	}
 }

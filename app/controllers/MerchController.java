@@ -8,7 +8,7 @@ import views.html.merch.merch_page;
 public class MerchController extends Controller {
 	public Result merchPage(Request request)
 	{
-		HomeController.writeLog(request, "merch");
+		HomeController.writeLog(request);
 		return ok(merch_page.render());
 	}
 }

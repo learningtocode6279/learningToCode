@@ -8,7 +8,7 @@ import views.html.art.art_page;
 public class ArtController extends Controller {
 	public Result artPage(Request request)
 	{
-		HomeController.writeLog(request, "art");
+		HomeController.writeLog(request);
 		return ok(art_page.render());
 	}
 }

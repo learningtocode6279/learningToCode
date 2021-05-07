@@ -7,7 +7,7 @@ import views.html.theory.theory_page;
 
 public class TheoryController extends Controller {
 	public Result theoryPage(Request request) {
-		HomeController.writeLog(request, "theory");
+		HomeController.writeLog(request);
 		return ok(theory_page.render());
 	}
 }

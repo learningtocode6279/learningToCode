@@ -8,7 +8,7 @@ import views.html.login.login_page;
 public class LoginController extends Controller {
 	public Result loginPage(Request request)
 	{
-		HomeController.writeLog(request, "login");
+		HomeController.writeLog(request);
 		return ok(login_page.render());
 	}
 }
