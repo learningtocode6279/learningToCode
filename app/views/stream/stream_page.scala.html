@@ -1,15 +1,29 @@
+@import info.youtube
+
+
 @main("Stream",
 "The absence of freedom of the press makes all other freedoms illusory.",
 true) {
 <div class="row">
 <div class="col-xs-12 col-xl-9">
 		<div id="live-stream-box"></div>
+		<div class="col-xs-12 dark-bg p-2 mt-2 mb-2">
+			<h2 onclick="toggleTwitchYoutube()"><a>Raw vods YouTube player</a></h2>
+			<div id="raw-vod-container" style="display: none">
+				@youtube("UUBvc2dNfp1AC0VBVU0vRagw")
+			</div>
+		</div>
 </div>
 <div id="twitch-chat-block" class="col-xs-12 col-xl-3" style="min-height: 500px"></div>
 </div>
 
 <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 <script type="text/javascript">
+function toggleTwitchYoutube(){
+	$("#raw-vod-container").toggle();
+	$("#live-stream-box").toggle();
+}
+
 var options = {
   height: "100%",
   width: "100%",
